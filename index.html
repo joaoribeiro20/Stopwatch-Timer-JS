@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTimer.css">
+    <title>CLOCK</title>
+    
+</head>
+<body>
+    <main class="mainPrincipal">
+        <section>
+        <div id="timerSessao1" class="timerSessao1" >
+            <div class="divTituloTime">
+                <h2>Timer</h2>
+                <p>DIGITE O TEMPO DESEJADO PARA O TIME</p>
+            </div> 
+            
+            <div  id="divExibidorTimerInput" class="divExibidorTimerInput">
+                <div id="divExibidorReal" class="divExibidorTimerInput">
+                    <span id="timerExibirReal" class="timerExibirReal"></span>
+                </div>
+                <div id="divInput" class="divExibidorTimerInput">
+                    <input id="TimerValor1" class="TimerValor" type="number" placeholder="00 :">
+               
+                    <input id="TimerValor2" class="TimerValor" type="number" placeholder="00 :">
+                   
+                    <input id="TimerValor3" class="TimerValor" type="number" placeholder="00">
+                </div>
+            </div>
+            
+           
+            <div class="divBotoesCentral">
+                <div id="divBotoesTimer1" class="divBotoes">
+                    <button id="btnTimerIniciar" class="btn" onclick="iniciarTimer()">Iniciar</button>
+                </div>
+                <div id="divBotoesTimer2" class="divBotoes">
+                </div>
+            </div>
+        </div>
+            
+        </section> 
+
+        <section>
+            <div id="cronometroSessao" class="cronometroSessao">
+                <div class="divTituloTime"><h2>Cronometro</h2></div>
+
+                <div id="divExibidor" class="divExibidor">
+                    <span id="cronometroExibir" class="cronometroExibir">00 : 00 : 00</span>
+                </div>
+                
+                <div id="divBotoesCentral" class="divBotoesCentral">
+                    <div id="divBotoes1" class="divBotoes">
+                    <button id="BtnIniciarBtnIniciar" class="btn" onclick="iniciarCronometro()">Iniciar</button>
+                </div>
+                <div id="divBotoes2" class="divBotoes">
+                    
+                </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+   <script src="index.js"></script>
+   <script src="timer.js"></script>
+</body>
+</html>
