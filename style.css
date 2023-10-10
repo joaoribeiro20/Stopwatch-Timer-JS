@@ -13,14 +13,22 @@ body{
 .cronometroSessao{
     background-color: #D9D9D9;
     border-radius: 15%;
-    border: #1C1919 solid 2px;
+    
     padding: 5%;
     width: 300px;
     height: 250px;
     margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
    text-align: center;
+   -webkit-box-shadow: 14px 17px 5px 0px rgba(43, 0, 100, 0.75);
+       -moz-box-shadow: 14px 17px 5px 0px rgba(43, 0, 100, 0.75);
+       box-shadow: 14px 17px 5px 0px rgba(43, 0, 100, 0.75);
 }
-
+.divTituloTime{
+    margin-top: 2vh;
+}
 .divBotoesCentral{
     display: flex;
     flex-direction: row;
@@ -48,8 +56,7 @@ body{
     .cronometroSessao{
         background-color: #D9D9D9;
         border-radius: 15%;
-        border: #1C1919 solid 2px;
-   
+        
         width: 200px;
         height: 150px;
         margin-top: 25%;
@@ -66,6 +73,15 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.btn{
+    background-color: #1C1919;
+    
+    border-radius: 25%;
+    color: #d9d9d9;
+    height: auto;
+    width: auto;
+    margin-top: 2vh;
+    margin: 5vh;
+}
    
 }
