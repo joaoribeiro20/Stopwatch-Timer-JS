@@ -48,7 +48,7 @@ function reiniciarC() {
         divBotoes1.removeChild(btnRetomarCronometro)
     }
     divBotoes1.appendChild(btnInicarCronometro)
-    cronometroExibir.innerText = `00 : 00 : 00`
+    cronometroExibir.innerText = `m00 : s00 : mm00`
 }
 //para o cronometro 
 function stopC() {
@@ -95,11 +95,11 @@ function clock(){
             }
         }
         if(segundos  <= 9){
-            cronometroExibir.innerText = `${horasTXT} : ${minutosTXT} : 0${segundos}` 
+            cronometroExibir.innerText = `m${horasTXT} : s${minutosTXT} : mm0${segundos}` 
         }else{
-            cronometroExibir.innerText = `${horasTXT} : ${minutosTXT} : ${segundos}` 
+            cronometroExibir.innerText = `m${horasTXT} : s${minutosTXT} : mm${segundos}` 
         }
                   
     }
-        , )
+        , 10)
 }

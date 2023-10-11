@@ -40,20 +40,20 @@ let msg = true
 function iniciarTimer(){
 
     
-if(valor1.value != '' && valor1.value >= 0){
+if(valor1.value != '' && valor1.value >= 0 ){
     horasTimer = valor1.value
 }else{
     horasTimer=0
 }
-if(valor2.value != '' && valor2.value >= 0){
+if(valor2.value != '' && valor2.value >= 0 && valor2.value <= 60 ){
     minutosTimer = valor2.value
 }else{
     minutosTimer=0
 }
-if(valor3.value != '' && valor3.value > 0){
+if(valor3.value != '' && valor3.value > 0 && valor3.value <= 60){
     segundosTimer = valor3.value
     msg = true
-}else if(valor2.value != '' && valor2.value >= 0){
+}else if(valor2.value != '' && valor2.value >= 0 && valor3.value <= 60){
     msg = true
     segundosTimer = 0
 }else{
